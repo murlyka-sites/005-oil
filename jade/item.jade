@@ -1,0 +1,66 @@
+.item
+	.container
+		.row
+			.col-xs-12
+				h2.item__title
+					| Дизельное топливо летнее
+			.col-xs-12
+				.item__wrap
+					.clearfix
+						.row
+							.col-xs-12
+								.item__info
+									.clearfix
+										.row
+											.col-sm-5.col-md-4
+												.item__pr
+													img(src="images/catalog/1.jpg", alt="Дизельное топливо летнее", width="230", height="295")
+											.col-sm-7.col-md-8
+												.item__chars
+													.item__char
+														b.item__char-key
+															| Производитель:
+														.item__char-value
+															| Киришский НПЗ
+													.item__char
+														b.item__char-key
+															| Описание:
+														.item__char-value
+															| Топливо дизельное ЕВРО, сорт C, вид III, (ДТ-5)
+															br
+															b.item__char-density
+																| Плотность: 0,838
+													.item__char
+														b.item__char-key
+															| Сертификаты соответствия:
+														.item__char-value.item__char-certificates
+															a.item__certificate.fancy(href="images/certificate/1.jpg")
+																img(src="images/certificate/1.jpg", alt="Сертификат 1")
+															a.item__certificate.fancy(href="images/certificate/2.jpg")
+																img(src="images/certificate/2.jpg", alt="Сертификат 2")
+							.col-xs-12
+								form.item__form.form-2(action="mail.php", method="post")
+									h3.form-2__title
+										| Заявка на прайс-лист
+									.form-2__inputs
+										.clearfix
+											.col-xs-12.col-md-4
+												input.input.input-gray.input--name.input-block.form__input(type="text", name="name", placeholder="Имя")
+											.col-xs-12.col-md-4
+												input.input.input-gray.input--email.input-block.form__input(type="text", name="email", placeholder="Ваш E-mail")
+											.col-xs-12.col-md-4
+												input.input.input-gray.input--phone.input-block.form__input(type="text", name="phone", placeholder="Номер телефона")
+									.form-2__range-label
+										| Объем требуемого топлива
+									.form-2__range-inputs
+										| от
+										input.input.input-gray.input-range.input-range-min(type="number", max="1000", min="1")
+
+										| до
+										input.input.input-gray.input-range.input-range-max(type="number", max="1000", min="1")
+										| литров
+									.form-2__range
+										input.input-range-ion(data-min="1", data-max="1000")
+									a.btn.btn-red.form-2__btn(href="#")
+										| Получить прайс лист
+

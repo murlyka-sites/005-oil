@@ -1,0 +1,27 @@
+{
+  "name": "005-oil",
+  "version": "1.0.0",
+  "description": "landing page oil",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/murlyka-sites/005-oil.git"
+  },
+  "author": "Milok Murlyka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/murlyka-sites/005-oil/issues"
+  },
+  "homepage": "https://github.com/murlyka-sites/005-oil#readme",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1",
+    "gulp-batch": "^1.0.5",
+    "gulp-plumber": "^1.1.0",
+    "gulp-watch": "^4.3.10",
+    "gulp.spritesmith": "^6.2.1"
+  }
+}

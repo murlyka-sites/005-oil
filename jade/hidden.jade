@@ -1,0 +1,53 @@
+.hidden
+	#call
+		form.popup.form-2(action="mail.php", method="post")
+			.container
+				.row
+					h3.form-2__title
+						| Заявка на прайс-лист
+					.form-2__inputs
+						.clearfix
+							.col-xs-12.col-md-4
+								input.input.input-gray.input--name.input-block.popup__input(type="text", name="name", placeholder="Имя", required)
+							.col-xs-12.col-md-4
+								input.input.input-gray.input--email.input-block.popup__input(type="email", name="email", placeholder="Ваш E-mail", required)
+							.col-xs-12.col-md-4
+								input.input.input-gray.input--phone.input-block.popup__input(type="text", name="phone", placeholder="Номер телефона", required)
+					.form-2__range-label
+						| Объем требуемого топлива
+					.form-2__range-inputs
+						| от
+						input.input.input-gray.input-range.input-range-min(type="number", max="1000", min="1", required)
+
+						| до
+						input.input.input-gray.input-range.input-range-max(type="number", max="1000", min="1", required)
+						| литров
+					.form-2__range
+						input.input-range-ion(data-min="1", data-max="1000")
+					button.btn.btn-red.form-2__btn(href="#")
+						| Получить прайс лист
+	#reviews.popup
+		h3.popup__title
+			| Отзыв
+		form(action="mail.php", method="post")
+			input.input.input-gray.input--name.input-block.popup__input(type="text", name="name", placeholder="Имя", required)
+			input.input.input-gray.input--comp.input-block.popup__input(type="text", name="name", placeholder="Организация", required)
+			select.input.input-gray.input--rating.input-block.popup__input
+				option(value="0", disabled, selected, required)
+					| Оценка
+				option(value="1")
+					| Ужасно
+				option(value="2")
+					| Плохо
+				option(value="3")
+					| Нормально
+				option(value="4")
+					| Хорошо
+				option(value="5")
+					| Отлично
+			textarea.input.input-gray.input--msg.input-block.popup__input(name="message", cols="30", rows="10", placeholder="Отзыв", required)
+			button.btn.btn-red.btn-block
+				| Отправить
+	#success.popup
+		h3.popup__title
+			| Форма успешно отправлена!
