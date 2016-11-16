@@ -25,51 +25,6 @@ $(document).ready(function() {
 		$(this).parent().next().toggleClass("open");
 	});
 
-	$(".perfor__item-circle-1").circliful({
-		animation: 1,
-		animationStep: 5,
-		foregroundBorderWidth: 2,
-		backgroundBorderWidth: 1,
-		percent: 84,
-		pointSize: 100,
-		foregroundColor: "#e01120",
-		backgroundColor: "white",
-		fontColor: "white"
-	});
-
-	$(".perfor__item-circle-2").circliful({
-		animation: 1,
-		animationStep: 5,
-		foregroundBorderWidth: 2,
-		backgroundBorderWidth: 1,
-		percent: 91,
-		pointSize: 100,
-		foregroundColor: "#e01120",
-		backgroundColor: "white",
-		fontColor: "white"
-	});
-
-	$(".perfor__item-circle-3").circliful({
-		animation: 1,
-		animationStep: 5,
-		foregroundBorderWidth: 2,
-		backgroundBorderWidth: 1,
-		percent: 91,
-		foregroundColor: "#e01120",
-		backgroundColor: "white",
-		fontColor: "white"
-	});
-
-	$(".perfor__item-circle-4").circliful({
-		animation: 1,
-		animationStep: 5,
-		foregroundBorderWidth: 2,
-		backgroundBorderWidth: 1,
-		percent: 76,
-		foregroundColor: "#e01120",
-		backgroundColor: "white",
-		fontColor: "white"
-	});
 
 	$(".fancy").fancybox({
 	});
@@ -89,6 +44,65 @@ $(document).ready(function() {
             '<source src="video/bg.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">' +
             '<source src="video/bg.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">' +
             '<source src="video/bg.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">' +
-          '</video>')
+          '</video>');
+		
+		new WOW().init();
 	}
+	var runsPerfor = true;
+
+	$(window).scroll(function () {		
+		if (($(document).scrollTop() + $(window).height() > $("#perfor-container").offset().top && $(document).scrollTop() - $("#perfor-container").offset().top < $("#perfor-container").height()) && runsPerfor) {
+			runsPerfor = false;
+
+			(function () {	
+
+				$(".perfor__item-circle-1").circliful({
+					animation: 1,
+					animationStep: 5,
+					foregroundBorderWidth: 2,
+					backgroundBorderWidth: 1,
+					percent: 84,
+					pointSize: 100,
+					foregroundColor: "#e01120",
+					backgroundColor: "white",
+					fontColor: "white"
+				});
+
+				$(".perfor__item-circle-2").circliful({
+					animation: 1,
+					animationStep: 5,
+					foregroundBorderWidth: 2,
+					backgroundBorderWidth: 1,
+					percent: 91,
+					pointSize: 100,
+					foregroundColor: "#e01120",
+					backgroundColor: "white",
+					fontColor: "white"
+				});
+
+				$(".perfor__item-circle-3").circliful({
+					animation: 1,
+					animationStep: 5,
+					foregroundBorderWidth: 2,
+					backgroundBorderWidth: 1,
+					percent: 91,
+					foregroundColor: "#e01120",
+					backgroundColor: "white",
+					fontColor: "white"
+				});
+
+				$(".perfor__item-circle-4").circliful({
+					animation: 1,
+					animationStep: 5,
+					foregroundBorderWidth: 2,
+					backgroundBorderWidth: 1,
+					percent: 76,
+					foregroundColor: "#e01120",
+					backgroundColor: "white",
+					fontColor: "white"
+				});
+			})();
+		}
+
+	});
 });

@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="bower_components/circliful/css/jquery.circliful.css">
     <link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/ion.rangeSlider.min.js"></script>
     <script src="bower_components/circliful/js/jquery.circliful.min.js"></script>
     <script src="bower_components/fancybox/source/jquery.fancybox.js"></script>
     <script src="http://malsup.github.com/jquery.form.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ismobilejs/0.4.0/isMobile.min.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
     <script src="js/main.js"></script>
   </head>
   <body>
@@ -62,7 +64,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <h2 class="item__title">Дизельное топливо летнее</h2>
+            <h2 class="item__title wow fadeInUp">Дизельное топливо летнее</h2>
           </div>
           <div class="col-xs-12">
             <div class="item__wrap">
@@ -73,17 +75,17 @@
                       <div class="clearfix">
                         <div class="row">
                           <div class="col-sm-5 col-md-4">
-                            <div class="item__pr"><img src="images/catalog/1.jpg" alt="Дизельное топливо летнее" width="230" height="295"></div>
+                            <div class="item__pr wow fadeInLeft"><img src="images/catalog/1.jpg" alt="Дизельное топливо летнее" width="230" height="295"></div>
                           </div>
                           <div class="col-sm-7 col-md-8">
                             <div class="item__chars">
-                              <div class="item__char"><b class="item__char-key">Производитель:</b>
+                              <div class="item__char wow fadeInRight"><b class="item__char-key">Производитель:</b>
                                 <div class="item__char-value">Киришский НПЗ</div>
                               </div>
-                              <div class="item__char"><b class="item__char-key">Описание:</b>
+                              <div class="item__char wow fadeInRight"><b class="item__char-key">Описание:</b>
                                 <div class="item__char-value">Топливо дизельное ЕВРО, сорт C, вид III, (ДТ-5)<br><b class="item__char-density">Плотность: 0,838</b></div>
                               </div>
-                              <div class="item__char"><b class="item__char-key">Сертификаты соответствия:</b>
+                              <div class="item__char wow fadeInRight"><b class="item__char-key">Сертификаты соответствия:</b>
                                 <div class="item__char-value item__char-certificates"><a href="images/certificate/1.jpg" class="item__certificate fancy"><img src="images/certificate/1.jpg" alt="Сертификат 1"></a><a href="images/certificate/2.jpg" class="item__certificate fancy"><img src="images/certificate/2.jpg" alt="Сертификат 2"></a></div>
                               </div>
                             </div>
@@ -94,28 +96,28 @@
                   </div>
                   <div class="col-xs-12">
                     <form action="mail.php" method="post" class="item__form form-2">
-                      <h3 class="form-2__title">Заявка на прайс-лист</h3>
+                      <h3 class="form-2__title wow fadeInUp">Заявка на прайс-лист</h3>
                       <div class="form-2__inputs">
                         <div class="clearfix">
                           <div class="col-xs-12 col-md-4">
-                            <input type="text" name="name" placeholder="Имя" class="input input-gray input--name input-block form__input">
+                            <input type="text" name="name" placeholder="Имя" data-wow-delay="0.4s" class="input input-gray input--name input-block form__input wow fadeInLeft">
                           </div>
                           <div class="col-xs-12 col-md-4">
-                            <input type="text" name="email" placeholder="Ваш E-mail" class="input input-gray input--email input-block form__input">
+                            <input type="text" name="email" placeholder="Ваш E-mail" data-wow-delay="0.2s" class="input input-gray input--email input-block form__input wow fadeInLeft">
                           </div>
                           <div class="col-xs-12 col-md-4">
-                            <input type="text" name="phone" placeholder="Номер телефона" class="input input-gray input--phone input-block form__input">
+                            <input type="text" name="phone" placeholder="Номер телефона" class="input input-gray input--phone input-block form__input wow fadeInLeft">
                           </div>
                         </div>
                       </div>
-                      <div class="form-2__range-label">Объем требуемого топлива</div>
-                      <div class="form-2__range-inputs">от
+                      <div class="form-2__range-label wow fadeInUp">Объем требуемого топлива</div>
+                      <div class="form-2__range-inputs wow fadeInLeft">от
                         <input type="number" max="1000" min="1" class="input input-gray input-range input-range-min">до
                         <input type="number" max="1000" min="1" class="input input-gray input-range input-range-max">литров
                       </div>
-                      <div class="form-2__range">
+                      <div class="form-2__range wow fadeInDown">
                         <input data-min="1" data-max="1000" class="input-range-ion">
-                      </div><a href="#" class="btn btn-red form-2__btn">Получить прайс лист</a>
+                      </div><a href="#" class="btn btn-red form-2__btn wow fadeInDown">Получить прайс лист</a>
                     </form>
                   </div>
                 </div>
@@ -132,8 +134,8 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <div class="map__title">Контакты</div>
-            <div class="map__desc">177555, г.Москва, Тверская ул 1, офис 404<br>+8 800 100 00 01<br><a href="mailto:info@rusneftinvest.ru">info@rusneftinvest.ru</a></div>
+            <div class="map__title wow fadeInDown">Контакты</div>
+            <div class="map__desc wow fadeInLeft">177555, г.Москва, Тверская ул 1, офис 404<br>+8 800 100 00 01<br><a href="mailto:info@rusneftinvest.ru" class="wow fadeInLeft">info@rusneftinvest.ru</a></div>
           </div>
         </div>
       </div>

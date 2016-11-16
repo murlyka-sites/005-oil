@@ -5,39 +5,39 @@ main.main
 		.main__bg
 		.container
 			.row
-				h1.main__title
+				h1.main__title.wow.fadeInDown
 					| Коммерческое предложение
 					br
 					| для вашей компании
-				p.main__slogan
+				p.main__slogan.wow.fadeInLeft
 					| Оставьте заявку и получите прайс-лист на нефтепродукты
 				form.main__form.form(action="mail.php", method="post")
 					.clearfix
 						.col-xs-12.col-sm-6.col-md-offset-3.col-md-3
-							input.input.input--name.input-block.form__input(type="text", name="name", placeholder="Имя", required)
+							input.input.input--name.input-block.form__input.wow.fadeInLeft(type="text", name="name", placeholder="Имя", required)
 						.col-xs-12.col-sm-6.col-md-3
-							input.input.input--phone.input-block.form__input(type="text", name="phone", placeholder="Телефон", required)
+							input.input.input--phone.input-block.form__input.wow.fadeInRight(type="text", name="phone", placeholder="Телефон", required)
 						.col-xs-12.col-md-offset-3.col-md-6
-							button.btn.btn-red.btn-block
+							button.btn.btn-red.btn-block.wow.fadeInUp
 								| Получить прайс лист
 				.main__edge.edge-main
-					p.edge-main__slogan
+					p.edge-main__slogan.wow.fadeInDown
 						| Наши ключевые приемущества
 					.clearfix
 						.col-sm-4
-							.edge-main__item
+							.edge-main__item.wow.fadeInLeft(data-wow-delay="0.4s")
 								.edge-main__item-icon
 									.i-edge-main-1
 								.edge-main__item-title
 									| Индивидуальный подход
 						.col-sm-4
-							.edge-main__item
+							.edge-main__item.wow.fadeInLeft(data-wow-delay="0.2s")
 								.edge-main__item-icon
 									.i-edge-main-2
 								.edge-main__item-title
 									| Быстрая логистика
 						.col-sm-4
-							.edge-main__item
+							.edge-main__item.wow.fadeInLeft(data-wow-delay="0s")
 								.edge-main__item-icon
 									.i-edge-main-3
 								.edge-main__item-title

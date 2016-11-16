@@ -2,7 +2,7 @@
 	.container
 		.row
 			.col-xs-12
-				h2.item__title
+				h2.item__title.wow.fadeInUp
 					| Дизельное топливо летнее
 			.col-xs-12
 				.item__wrap
@@ -13,16 +13,16 @@
 									.clearfix
 										.row
 											.col-sm-5.col-md-4
-												.item__pr
+												.item__pr.wow.fadeInLeft
 													img(src="images/catalog/1.jpg", alt="Дизельное топливо летнее", width="230", height="295")
 											.col-sm-7.col-md-8
 												.item__chars
-													.item__char
+													.item__char.wow.fadeInRight
 														b.item__char-key
 															| Производитель:
 														.item__char-value
 															| Киришский НПЗ
-													.item__char
+													.item__char.wow.fadeInRight
 														b.item__char-key
 															| Описание:
 														.item__char-value
@@ -30,7 +30,7 @@
 															br
 															b.item__char-density
 																| Плотность: 0,838
-													.item__char
+													.item__char.wow.fadeInRight
 														b.item__char-key
 															| Сертификаты соответствия:
 														.item__char-value.item__char-certificates
@@ -40,27 +40,27 @@
 																img(src="images/certificate/2.jpg", alt="Сертификат 2")
 							.col-xs-12
 								form.item__form.form-2(action="mail.php", method="post")
-									h3.form-2__title
+									h3.form-2__title.wow.fadeInUp
 										| Заявка на прайс-лист
 									.form-2__inputs
 										.clearfix
 											.col-xs-12.col-md-4
-												input.input.input-gray.input--name.input-block.form__input(type="text", name="name", placeholder="Имя")
+												input.input.input-gray.input--name.input-block.form__input.wow.fadeInLeft(type="text", name="name", placeholder="Имя", data-wow-delay="0.4s")
 											.col-xs-12.col-md-4
-												input.input.input-gray.input--email.input-block.form__input(type="text", name="email", placeholder="Ваш E-mail")
+												input.input.input-gray.input--email.input-block.form__input.wow.fadeInLeft(type="text", name="email", placeholder="Ваш E-mail", data-wow-delay="0.2s")
 											.col-xs-12.col-md-4
-												input.input.input-gray.input--phone.input-block.form__input(type="text", name="phone", placeholder="Номер телефона")
-									.form-2__range-label
+												input.input.input-gray.input--phone.input-block.form__input.wow.fadeInLeft(type="text", name="phone", placeholder="Номер телефона")
+									.form-2__range-label.wow.fadeInUp
 										| Объем требуемого топлива
-									.form-2__range-inputs
+									.form-2__range-inputs.wow.fadeInLeft
 										| от
 										input.input.input-gray.input-range.input-range-min(type="number", max="1000", min="1")
 
 										| до
 										input.input.input-gray.input-range.input-range-max(type="number", max="1000", min="1")
 										| литров
-									.form-2__range
+									.form-2__range.wow.fadeInDown
 										input.input-range-ion(data-min="1", data-max="1000")
-									a.btn.btn-red.form-2__btn(href="#")
+									a.btn.btn-red.form-2__btn(href="#").wow.fadeInDown
 										| Получить прайс лист
 
