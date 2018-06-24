@@ -45,16 +45,16 @@ $(document).ready(function() {
             '<source src="video/bg.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">' +
             '<source src="video/bg.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">' +
           '</video>');
-		
-		new WOW().init();
+
+		// new WOW().init();
 	}
 	var runsPerfor = true;
 
-	$(window).scroll(function () {		
+	$(window).scroll(function () {
 		if (($(document).scrollTop() + $(window).height() > $("#perfor-container").offset().top && $(document).scrollTop() - $("#perfor-container").offset().top < $("#perfor-container").height()) && runsPerfor) {
 			runsPerfor = false;
 
-			(function () {	
+			(function () {
 
 				$(".perfor__item-circle-1").circliful({
 					animation: 1,
